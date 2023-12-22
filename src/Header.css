@@ -1,0 +1,7 @@
+.todo-header{
+    display: flex;
+    height: 20%;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+}
