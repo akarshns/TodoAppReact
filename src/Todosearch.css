@@ -1,26 +1,43 @@
 .todo-search{
     display: flex;
-    border: 1px solid black;
+    margin-left: 20vw;
+    margin-right: 20vw;
     height: 30%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(41, 47, 45);
 }
 
 .search-items{
-margin: 10px;
+margin: 5px;
+width: 400px;
+}
+
+#add-button{
+ position: relative;
+ left: 160px;
 }
 
 .todos{
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    justify-content: center;
 }
 .todo-items{
     margin-left: 10px;
+    
+}
+
+.todo-list{
+    background-color: rgb(160, 216, 197);
+    margin-left: 20vw;
+    margin-right: 20vw;
+    word-wrap:break-word ;
 }
 
 #todo-titles{
     font-size: 30px;
+    width: 40%;
 }

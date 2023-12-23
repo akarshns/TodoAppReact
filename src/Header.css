@@ -1,7 +1,9 @@
 .todo-header{
     display: flex;
     height: 20%;
-    background-color: blueviolet;
+    background-color: rgb(24, 27, 24);
     align-items: center;
     justify-content: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
