@@ -1,5 +1,6 @@
 import './Todosearch.css';
 import React from 'react'
+import { Button } from 'react-bootstrap';
 
 
 export const Todosearch = ()=> {
@@ -30,6 +31,7 @@ export const Todosearch = ()=> {
       };
     
       const handleEdit = (todo) => {
+        //handle
       };
     
       const handleCheck = (todo) => {
@@ -44,14 +46,14 @@ export const Todosearch = ()=> {
     return(
         <>
         <div className='todo-search'>
-            <div className='search-items'><input type='text' placeholder='search text' onChange={handleChange} value={todo}/></div>
-            <div className='search-button'><button onClick={handleSubmit}>ADD</button></div>
+            <div className='search-items'><input type='text'  placeholder='search text' onChange={handleChange} value={todo}/></div>
+            <div className='search-button'><Button onClick={handleSubmit}>ADD</Button></div>
         </div>
         <div className='todo-list'>
             {
-                todoList.map((todo)=>{
-                    return(<div className='todos'>
-                        <input className='todo-items' type='checkbox' onChange={()=>handleCheck(todo)} checked={todo.isCompleted}/>
+                todoList.map((todo, index)=>{
+                    return(<div className='todos' key={index}>
+                        <input className='todo-items' type='checkbox'  onChange={()=>handleCheck(todo)} checked={todo.isCompleted}/>
                         <span  className='todo-items'id='todo-titles'>{todo.title}</span>
                         <button  className='todo-items' onClick={()=>handleDelete(todo)}  >DELETE</button>
                         <button  className='todo-items' onClick={()=>handleEdit(todo)} >EDIT</button>
